@@ -1,12 +1,13 @@
 package threads;
 import java.lang.Thread;
-
+//Class/thread to get the average of list of numbers
 
 public class av extends Thread{
 	int[] nums;
 	public av(int[] nums) {
 		this.nums = nums;
 	}
+	//method for getting average/printing it out
 	public void run() {
 		int tot = 0;
 		for (int i = 0; i < nums.length; i++){
